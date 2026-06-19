@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: rgb(223, 209, 189);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 900px;
+    background: rgb(203, 163, 193);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #a73d3d;
+    margin-bottom: 25px;
+}
+
+.metro-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+button {
+    grid-column: 1/3;
+    padding: 15px;
+    border: none;
+    background: #da4545;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #8e0000;
+}
+
+#output {
+    margin-top: 30px;
+}
+
+.result-box {
+    background: #eef6ff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.result-box h2 {
+    color: #1565c0;
+    margin-bottom: 15px;
+}
+
+.info {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.route {
+    margin-top: 20px;
+}
+
+.station {
+    background: #1976d2;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.arrow {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+@media(max-width:768px) {
+    .metro-card {
+        grid-template-columns: 1fr;
+    }
+    button {
+        grid-column: 1;
+    }
+}
